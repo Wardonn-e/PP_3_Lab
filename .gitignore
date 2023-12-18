@@ -3,6 +3,7 @@ task_2.py
 task_3.py
 task_4.py
 task_5.py
+ide.py
 /dataset
 /dataset_copy
 .idea
