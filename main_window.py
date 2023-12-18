@@ -7,6 +7,7 @@ import task_3
 import task_5
 from task_1 import run1
 
+
 class ScrollLabel(QScrollArea):
     """
     Creates a window for viewing reviews.
@@ -17,6 +18,7 @@ class ScrollLabel(QScrollArea):
     Returns:
     None
     """
+
     def __init__(self, *args: tuple, **kwargs: dict) -> None:
         """
         Initializes the ScrollLabel.
@@ -63,6 +65,7 @@ class Example(QWidget):
     Returns:
     None
     """
+
     def __init__(self) -> None:
         """
         Initializes the Example class.
@@ -168,8 +171,6 @@ class Example(QWidget):
                 setattr(self, f'rating_iter{rating}', new_rating_iter)
                 ErrorMessageBox(self, 'something went wrong')
 
-
-
     def click_csv(self) -> None:
         """
         Creates a window for creating a CSV file.
@@ -206,8 +207,6 @@ class Example(QWidget):
         dialog.setLayout(layout)
 
         dialog.exec_()
-
-
 
     def select_folder(self) -> None:
         """
@@ -317,9 +316,6 @@ class Example(QWidget):
 
         dialog.exec_()
 
-
-
-
     def click_dataset_copy(self) -> None:
         """
         Creates a window for creating a copy of the dataset copy.
@@ -381,8 +377,6 @@ class Example(QWidget):
             run1(self.folderpath)
         else:
             ErrorMessageBox(self, "Please choose directory with dataset")
-
-
 
     def click_create_csv2(self) -> None:
         """
